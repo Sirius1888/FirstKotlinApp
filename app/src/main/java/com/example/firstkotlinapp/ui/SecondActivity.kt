@@ -1,7 +1,9 @@
-package com.example.firstkotlinapp
+package com.example.firstkotlinapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.firstkotlinapp.R
+import com.example.firstkotlinapp.utils.UIManager
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -16,7 +18,10 @@ class SecondActivity : AppCompatActivity() {
         val message = "userName: $userName \npassword: $password"
         text.text = message
 
-        UIManager.showToast("Hello its class from java", this)
+        UIManager.showToast(
+            "Hello its class from java",
+            this
+        )
 
     }
 }
